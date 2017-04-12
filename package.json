@@ -1,0 +1,20 @@
+{
+  "name": "download-checksum",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "checksum": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/checksum": "^0.1.30",
+    "@types/chrome": "^0.0.46",
+    "awesome-typescript-loader": "^3.0.7",
+    "css-loader": "^0.26.2",
+    "source-map-loader": "^0.1.6",
+    "typescript": "^2.2.2"
+  },
+  "description": "chrome extension to checksum download files",
+  "repository": "https://haniyama_wataru@gitlab.development.yubion.com/haniyama_wataru/chrome-extension.git",
+  "author": "haniyama_wataru <haniyama_wataru@sgk.jp>"
+}
