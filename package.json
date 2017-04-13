@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "checksum": "^0.1.1"
+    "@types/crypto-js": "^3.1.33",
+    "crypto-js": "^3.1.9-1"
   },
   "devDependencies": {
-    "@types/checksum": "^0.1.30",
     "@types/chrome": "^0.0.46",
     "awesome-typescript-loader": "^3.0.7",
     "css-loader": "^0.26.2",

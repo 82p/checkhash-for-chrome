@@ -1,5 +1,5 @@
 /// <reference path="../node_modules/@types/chrome/index.d.ts"/>
-import * as checksum from 'checksum';
+import * as Crypto from 'crypto-js';
 
 // Copyright (c) 2014 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
@@ -60,8 +60,8 @@ function renderStatus(statusText:string) {
 document.addEventListener('DOMContentLoaded', function() {
   getCurrentTabUrl(function(url) {
     // Put the image URL in Google search.
-    let s:string = checksum(url);
+    let checkSHA256 = Crypto.SHA256;
+    let s:string = checkSHA256(url);
     renderStatus('checksum url =  ' + s );
   });
 });
-
