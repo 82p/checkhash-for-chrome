@@ -3,7 +3,7 @@
 ## How to build
 
 ```
-> yarn init
+> yarn install
 > webpack
 ```
 
