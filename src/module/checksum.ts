@@ -49,7 +49,7 @@ export class Sumchecker {
     public checkString(str:string){
         const sum = this.createChecker(this._type);        
         sum.update(str);
-        return sum.digest();
+        return sum.digest('hex');
     }
 }
 
