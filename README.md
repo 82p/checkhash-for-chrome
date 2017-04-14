@@ -7,6 +7,8 @@
 > webpack
 ```
 
+open 'dist' folder by chrome extension in developer mode.
+
 ## What is this
 ダウンロードしたファイルのチェックサムを計算するExtensionになる予定
 
@@ -36,7 +38,7 @@ Chrome の Extension は manifest.json に記述された html,js を読み込�
 Google公式の Getting Start を参考に
 popup.html 及び popup.js を作成した。
 
-単純に上記の manifest.json であれば、Extension のアイコンを押すと
+上記の manifest.json であれば、Extension のアイコンを押すと
 popup.html が単純に起動する。
 
 今後は downloads を使う為 "background" で動く js と
