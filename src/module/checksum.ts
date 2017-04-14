@@ -21,9 +21,9 @@ export class Sumchecker {
         }
     }
     /**
-     * return checksum for Promise
+     * return checksum as Promise
      * You can use like below
-     *  check(filename).then((checksum) => {use checksum})
+     *  check(filename).then((checksum) => {code using checksum})
      * @param input filepath or ReadStream of file
      */
     public checkfile(input: fs.ReadStream | string): Promise<string> {
@@ -33,7 +33,7 @@ export class Sumchecker {
         }else{
             stream = input;
         }
-        return new Promise<string>((resolve: (value: string) => void, reject) => {
+        return new Promise<string>((resolve: (value: string) => void, reject:(err:string)=>void) => {
             const sum = this.createChecker(this._type);
             try {
                 stream.on('data', (data: string) => sum.update(data));
