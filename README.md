@@ -43,6 +43,10 @@ popup.html が単純に起動する。
 
 今後は downloads を使う為 "background" で動く js と
 設定画面等を作成する予定。
+## Refference
+
+http://var.blog.jp/archives/54727354.html
+
 
 ## Lisence
 [MIT](https://spdx.org/licenses/MIT)
