@@ -2,9 +2,15 @@ module.exports = {
     entry: "./src/index.ts",
     output: {
         filename: "popup.js",
-        path: __dirname + "/dist"
+        path: __dirname + "/dist",
+        libraryTarget: 'commonjs'
     },
-
+    node: {
+        module: "empty",
+        fs: "empty",
+        crypto: "empty",        
+    },
+    // target: "node",
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
 
@@ -18,6 +24,7 @@ module.exports = {
             // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
             {
                 test: /\.tsx?$/,
+                exclude: /node_modules/,
                 loader: "awesome-typescript-loader"
             },
             {
@@ -31,13 +38,9 @@ module.exports = {
         //     { test: /\.js$/, loader: "source-map-loader" }
         // ]
     },
-    // What did it mean?
-    node: {
-        fs: "empty",
-    },
     // When importing a module whose path matches one of the following, just
     // assume a corresponding global variable exists and use that instead.
     // This is important because it allows us to avoid bundling all of our
     // dependencies, which allows browsers to cache those libraries between builds.
-    externals: {},
+    // externals: {},
 };
