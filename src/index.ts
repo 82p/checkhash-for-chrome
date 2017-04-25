@@ -1,4 +1,3 @@
-/// <reference path="../node_modules/@types/chrome/index.d.ts"/>
 import {Sumchecker,HashAlgorithm} from './module/checksum'
 
 
