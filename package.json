@@ -16,6 +16,6 @@
     "typescript": "^2.2.2"
   },
   "description": "chrome extension to checksum download files",
-  "repository": "https://haniyama_wataru@gitlab.development.yubion.com/haniyama_wataru/chrome-extension.git",
+  "repository": "https://github.com/82p/checkhash-for-chrome.git",
   "author": "haniyama_wataru <haniyama_wataru@sgk.jp>"
 }
